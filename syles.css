@@ -1,0 +1,239 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+/* Style */
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px; 
+}
+
+.whale-container{
+    width: 20rem;
+    margin: 2rem auto;
+    align-items: center;
+    text-align: center;
+}
+
+#logo{
+    width: 4rem;
+}
+
+.content{
+    margin: 2rem 0;
+}
+
+.color-grey{
+    color: var(--gray);
+    font-weight: 300;
+}
+
+.reminder_text{
+    margin: 2rem 0;
+}
+
+.content__email-form{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.email__input{
+    width: 18rem;
+    height: 2.5rem;
+    border: 1px solid var(--pale-blue);
+    border-radius: 20px;
+    outline: none;
+    padding: 1rem;
+}
+
+.email__input::placeholder{
+    color: var(--pale-blue);
+}
+
+.error .email__input{
+    border-color: var(--light-red);
+}
+
+.email__hidden-text{
+    margin: -0.6rem 0;
+    color: var(--light-red);
+    font-size: 12px;
+    visibility: hidden;
+    font-style: italic;
+}
+
+.error .email__hidden-text{
+    visibility: visible;
+}
+
+.error .email__btn{
+    margin-top: -2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.email__btn{
+    margin-top: -3.5rem;
+    width: 18rem;
+    height: 2.5rem;
+    border: none;
+    background-color: var(--blue);
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.social__image{
+    margin: 4rem 0;
+}
+
+#examples__image{
+    width: 20.5rem;
+}
+
+.social__links{
+    margin-top: 6rem;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list__icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+#facebook{
+    margin: -2.7px 0 0 -2.7px;
+    width: 44px;
+    height: 44px;
+    color: white;
+    background-color: var(--blue);
+}
+
+#twitter{
+    color: var(--blue);
+    margin: 8px 0 0 0;
+}
+
+#instagram{
+    color: var(--blue);
+    margin: 8px 0 0 0;
+}
+
+.social__copyrighting{
+    margin-top: 2rem;
+}
+
+.social__copyrighting p{
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+
+}
+
+@media (min-width: 480px){
+    .whale-container{
+        width: 40rem;
+        margin-top: 2rem;
+    }
+
+    #logo{
+        width: 8rem;
+    }
+
+    .content{
+        margin-top: 2rem;
+    }
+
+    .reminder_text{
+        margin-top: 2rem;
+    }
+
+    .email__input{
+        width: 30rem;
+    }
+
+    .email__btn{
+        width: 30rem;
+    }
+
+    #examples__image{
+        width: 32rem;
+    }
+}
+
+@media (min-width: 920px) {
+    h2{
+        font-size: 35px;
+    }
+
+    .reminder_text{
+        margin-top: 2rem;
+    }
+
+    .content__email-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email__input{
+        position: fixed;
+        width: 24rem;
+        margin-left: -9rem;
+    }
+
+    .email__btn{
+        width: 8rem;
+    }
+
+    .email__btn{
+        position: fixed;
+        margin-top: 0;
+        margin-left: 24rem;
+    }
+
+    .error .email__btn{
+        margin-top: 0;
+    }
+
+    .email__hidden-text{
+        position: absolute;
+        margin: 2rem 0 0 -8rem;
+    }
+}

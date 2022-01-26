@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <ion-icon src="/path/to/external/file.svg"></ion-icon>
+  <link href="./syles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="whale-container">
+    <header class='header'>
+      <div class="header__logo">
+         <img src='./images/logo.svg' alt="Company logo" id='logo'/>
+      </div>
+    </header>
+    <main class='content'>
+      <div class="content__top-block reminder">
+        <div class="reminder__header">
+          <h2><span class='color-grey'>We are launching</span> soon!</h2>
+        </div>
+        <div class="reminder_text">
+          <p>Subscribe and get notified</p>
+        </div>
+        <form onsubmit="return false" class='content__email-form email-block'>
+          <input placeholder="Your email address..." class='email__input' type="text"  id="email-input"  name="email">
+          <div><p class='email__hidden-text'>Please provide a valid email address</p></div>
+          <button type="submit" class='email__btn' onclick="errs()">Notify Me</button>
+        </form>
+      </div>
+      <div class="content__image-link social">
+        <div class="social__image">
+          <img src="./images/illustration-dashboard.png" id='examples__image' alt='Image how site looks like'>
+        </div>
+        <div class="social__links">
+          <ul class='list'>
+            <li class='list__icon'><a href="http://facebook.com/"><ion-icon name="logo-facebook" id='facebook'></ion-icon></a></li>
+            <li class='list__icon'><a href="http://twitter.com/"><ion-icon name="logo-twitter" id='twitter'></ion-icon></a></li>
+            <li class='list__icon'><a href="http://instagram.com/"><ion-icon name="logo-instagram" id='instagram'></ion-icon></a></li>
+          </ul>
+        </div>
+        <div class="social__copyrighting">
+          <p>&copy; Copyright Ping. All rights reserved.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/valli450" target="_blank">Valli</a>.
+      </p>
+    </footer>
+  </div>
+  <script src="./main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>
